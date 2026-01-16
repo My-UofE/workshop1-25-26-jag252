@@ -23,9 +23,9 @@ def play_game_2(min_x=0, max_x=20):
         user_input = "NA"
         while user_input not in ["h", "l"]:
             user_input = input("Enter h or l:\n> ")
-        
+
         current_val = sequence[-1]
-        
+
         next_val = current_val
         while next_val == current_val:
             next_val  = random.randint(min_x,max_x)
@@ -49,7 +49,7 @@ def play_game_2(min_x=0, max_x=20):
             print("Thanks for playing...")
             print("Bye!")
             game_ended = True
-            
-                 
+
+
 if __name__ == "__main__":
     play_game_2()
